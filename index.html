@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Cart</a></li>
+            <li id="user-options" style="display: none;">
+              <a href="#">User Options</a>
+              <ul id="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+            <li id="login-link"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+        <h1>Library Management</h1>
+      </header>
+
+  <main>
+    
+    <div class="search-bar">
+      <input type="text" placeholder="Search books">
+      <!-- Suggestions dropdown here -->
+      <button type="button">Search</button>
+    </div>
+
+    <div class="filter-bar">
+      <select>
+        <option value="title">Title</option>
+        <option value="author">Author</option>
+        <option value="subject">Subject</option>
+        <option value="publish-date">Publish Date</option>
+      </select>
+      <input type="text" placeholder="Filter">
+    </div>
+
+    <div class="book-list">
+      <!-- Book cards here -->
+    </div>
+
+    <div class="pagination">
+      <button type="button">Load More</button>
+    </div>
+</div>
+<div id="loading">Loading...</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Library Management. All rights reserved.</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+  <script src="app.js">login</script>
+</body>
+</html>
+
